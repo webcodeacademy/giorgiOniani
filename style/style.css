@@ -1,0 +1,496 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+body{
+    overflow: hidden;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.slide1{
+    background: url(../img/black\ panther.png);
+    background-position-y: -100px;
+    background-repeat: no-repeat;
+}
+.slide2{
+    background: url(../img/togo.jpg);
+    background-position-y: -706px;
+}
+.slide3{
+    background: url(../img/spcov.jpg);
+    background-position-y: -100px;
+    
+}
+.slide4{
+    background: url(../img/batcov.png);
+    background-position-y: -700px;
+}
+
+.slide{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.cap{
+    width: 300px;
+    /* background-color: brown; */
+    position: absolute;
+    top:38%;
+    text-align: center;
+    
+}
+
+.movie1{
+
+    background: url(../img/wakanda2.webp);
+    background-position-y: -20px;
+}
+.movie2{
+    background: url(../img/togo.jpg);
+    
+}
+.movie3{
+    background: url(../img/sp.jpg);
+    background-position-x: right;
+}
+.movie4{
+    background: url(../img/batman.jpg);
+    background-position-y: -20px;
+}
+
+.cap .movie{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+}
+.cap h2{
+    color: white;
+    margin-top: 20px;
+}
+
+.owl-prev{
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 0;
+    color: white;
+    width: 30px;
+    height: 50px;
+    
+    
+}
+
+
+.owl-next{
+    position: absolute;
+    z-index: 102;
+    top: 50%;
+    right: 0;
+    color: white;
+    width: 30px;
+    height: 50px;
+    
+    
+}
+
+
+.owl-dots{
+    position: absolute;
+    top: 50%;
+    display: none;
+}
+
+header.head{
+    width: 100%;
+    padding: 30px;
+    background-color: rgba(93, 52, 1,0);
+    padding-left: 50px;
+    
+}
+header ul li a{
+    font-size: 24px;
+    font-weight: bolder;
+    color: white;
+}
+.pg2{
+    justify-content: space-around;
+}
+article{
+    width: 350px;
+    height: 450px ;
+    margin-top: 50px;
+    margin-left: 50px;
+    flex-direction: column;
+    cursor: pointer;
+    
+    
+}
+article div{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    background-image:url(../img/wakanda2.webp);
+    background-size: cover;
+    background-position-y: -70px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    position: relative;
+}
+
+article div button{
+    position: absolute;
+    right: 5px;
+    top: 0;
+    background-color: gold;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+article h2{
+    color: white;
+}
+.form1{
+   width: 600px; 
+   height: 50px;
+   
+}
+
+.form3{
+    flex-direction: column;
+    width: 320px;
+    flex-wrap: wrap;
+    
+    height: 200px;
+    padding: 30px;
+    align-items: flex-start;
+
+}
+.togo{
+    background-image: url(../img/togo.jpg);
+    background-position-y: 0;
+}
+.spider{
+    background-image: url(../img/sp1.webp);
+    background-position-y: -20px;
+   
+}
+.batman{
+    background-image: url(../img/batman.jpg);
+}
+
+.sub1{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.form2{
+    margin: 50px auto;
+    width: 400px;
+    height: 400px;
+    flex-direction: column;
+    background-color: rgba(20, 20, 20, 0.8);
+    
+    position: relative;
+}
+.form2 input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid grey;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    
+}
+
+
+
+.submit{
+    position: relative;
+    padding: 20px 50px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 40px;
+}
+.submit span{
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    font-family: Arial;
+    letter-spacing: 8px;
+    z-index: 1;
+
+
+
+}
+.submit .liquid{
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: #7c7d80;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+    transition: .5s;
+}
+.submit .liquid::after,
+.submit .liquid::before{
+    content:'';
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: #000;
+}
+.submit .liquid::before{
+    border-radius: 45%;
+    background: rgba(20, 20, 20, 1);
+    animation: animate 5s linear infinite;
+}
+.submit .liquid::after{
+    border-radius: 40%;
+    background: rgba(20, 20, 20, .5);
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+}
+.movie{
+    width: 600px;
+    height: 350px;
+    background-color: rgba(20, 20, 20, 0.8);
+}
+.movie .form1 label{
+    color: white;
+}
+.movie .form3 label{
+    color: white;
+}
+
+.fin{
+    background-color: lightgray;
+    background-image: url(../img/26102.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -50px;
+}
+.pg2{
+    justify-content: space-between;
+    padding-right: 50px;
+}
+.finish{
+    text-align: center;
+    flex-direction: column;
+    margin-top: 200px;
+    color: rgb(246, 245, 245);
+}
+.finish h2{
+    font-size: 40px;
+    cursor: pointer;
+    margin-top: -40px;
+    
+}
+.finish a{
+    position: absolute;
+    left: 50px;
+    bottom: 100px;
+    color: rgb(245, 241, 241);
+}
+.chatbutton{
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    background-color: #555050;
+    border-radius: 30px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.chatbutton:hover, .send:hover{
+    cursor: pointer;
+    background-color: #bbbbbb;
+}
+.chatbox{
+    width: 300px;
+    border: 1px solid #000000;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #807c7c;
+    display: none;
+    
+}
+.chatbox .chatboxheader{
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #000000;
+    color: #f4f2f2;
+    
+}
+.chatbox .chatboxheader i{
+    cursor: pointer;
+}
+.chatbox .chatboxmain{
+    width: 100%;
+    padding: 20px;
+}
+.chatbox .chatboxmain input, .chatbox .chatboxmain textarea{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 14px;
+    resize: none;
+}
+.send{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #d8d8d8;
+}
+.fini{
+    background-image: url(../img/pexels-cottonbro-studio-3945315.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fin1{
+    background-image: url(../img/7Z_2012.w020.n001.884B.p15.884.jpg);
+    background-size: cover;
+    background-size: 105%;
+    background-repeat: no-repeat;
+    background-position-x: -50px;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    body {
+       overflow: hidden;
+      
+    }
+    .slide{
+        width: 100%;
+        height: cover;
+    }
+    .slide1{
+        background-image: url(../img/black\ panther.png);
+        background-repeat: no-repeat;
+        background-size: 250%;
+        background-position:center;
+        background-position-y: -80px;
+
+
+
+    }
+    .slide2{
+        background: url(../img/togo.jpg);
+        background-size: 140%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-y: -50px;
+
+        
+    }
+    .slide3{
+        background: url(../img/spcov.jpg);
+        background-repeat: no-repeat;
+        background-size: 200%;
+        background-position: center;
+       
+        
+    }
+    .slide4{
+        background: url(../img/batcov.png);
+        background-repeat: no-repeat;
+        background-size: 150%;
+        background-position: center;
+        background-position-y: -600px;
+    }
+    .cap{
+        
+        top:42%;
+        
+        
+    }
+  
+    
+
+  }
+  @media only screen and (max-width: 390px) {
+    body {
+       overflow: hidden;
+      
+    }
+    .slide{
+        width: 100%;
+        height: cover;
+    }
+    .slide1{
+        background-image: url(../img/black\ panther.png);
+        background-repeat: no-repeat;
+        background-size: 305%;
+        background-position:center;
+        background-position-y: 0;
+
+
+
+    }
+    .slide2{
+        background: url(../img/tog.webp);
+        background-size:520%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: -1000px;
+        background-position-y: -280px;
+       
+
+        
+    }
+    .slide3{
+        background: url(../img/spcov.jpg);
+        background-repeat: no-repeat;
+        background-size: 300%;
+        background-position: center;
+       
+        
+    }
+    .slide4{
+        background: url(../img/batcov.png);
+        background-repeat: no-repeat;
+        background-size: 250%;
+        background-position: center;
+        background-position-y: -300px;
+    }
+    .cap{
+        
+        top: 40%;
+        
+        
+    }
+  
+    
+
+  }
+

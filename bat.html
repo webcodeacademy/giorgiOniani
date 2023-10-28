@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Batman</title>
+    <link rel="icon" href="img/movie-icon-2.ico">
+</head>
+<body class="fin">
+    <header class="head">
+        <nav id="nav">
+
+        </nav>
+
+    </header>
+    <main class="flex pg2">
+        <article class="flex">
+            <div class="batman"> 
+                <button>IMBD 7.2</button>
+            </div>
+            <h2>Batman</h2>
+        </article>
+        <div class="movie">
+        <form class="flex form1">
+            <input type="radio" id="monday" name="date" value="monday">
+            <label for="monday">ორშაბათი</label>
+            <input type="radio" id="tuesday" name="date" value="tuesday">
+            <label for="tuesday">სამშაბათ</label><br>
+            <input type="radio" id="wednesday" name="date" value="wednesday">
+            <label for="wednesday">ოთხშაბათი</label>
+            <input type="radio" id="thursday" name="date" value="thursday">
+            <label for="thursday">ხუთშაბათი</label>
+            <input type="radio" id="friday" name="date" value="friday">
+            <label for="friday">პარასკევი</label>
+        </form>
+        <form class="flex form3">
+            <div>
+            <input type="radio" id="first" name="time" value="first">
+            <label for="first">პირველი სეანსი 11&#58;30 &#95; 12 ლარი</label>
+            </div>
+            <div>
+            <input type="radio" id="secound" name="time" value="secound">
+            <label for="secound">მეორე სეანსი 15&#58;00 &#95; 15 ლარი</label>
+            </div>
+            <div>
+            <input type="radio" id="third" name="time" value="third">
+            <label for="wednesday">მესამე სეანსი 20&#58;00 &#95; 20 ლარი</label>
+            </div>
+        </form>
+        <a href="reg.html" class="submit sub1">
+            <span>submit</span>
+            <div class="liquid"></div>
+        </a>
+        </div>
+        <p class="chatbutton" onclick="gamochena()">
+            მოგვწერეთ შეტყობინება
+        </p>
+
+
+       
+        <div class="chatbox" id="chatbox">
+            <div class="chatboxheader flex">
+                <p>მოგვწერეთ შეტყობინება</p>
+                <p onclick="gaqroba()">
+                    <i class="fa-solid fa-xmark"></i>
+                </p>
+            </div>
+            <div class="chatboxmain">
+                <input type="text" name="firstname" id="firstname" placeholder="სახელი">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="ჩაწერეთ თქვენი შეტყობინება/საჩივარი"></textarea>
+                <p class="send" onclick="gaqroba()">გაგზავნა</p>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://kit.fontawesome.com/f245be49d1.js" crossorigin="anonymous"></script>
+
+    <script src="java/nav.js"></script>
+    <script src="java/chat.js"></script>
+
+    
+</body>
+</html>
